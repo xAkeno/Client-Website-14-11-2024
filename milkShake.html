@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+</head>
+<body>
+    <div class="product-info-card">
+        <img
+          loading="lazy"
+          srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/5bc7f035ca7b527c2ccc5d3deb1a6ecd5d381d314fd3bc6d62520af556b6194c?placeholderIfAbsent=true&apiKey=dd100465f17e4316864c3934d9d874f8&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/5bc7f035ca7b527c2ccc5d3deb1a6ecd5d381d314fd3bc6d62520af556b6194c?placeholderIfAbsent=true&apiKey=dd100465f17e4316864c3934d9d874f8&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/5bc7f035ca7b527c2ccc5d3deb1a6ecd5d381d314fd3bc6d62520af556b6194c?placeholderIfAbsent=true&apiKey=dd100465f17e4316864c3934d9d874f8&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/5bc7f035ca7b527c2ccc5d3deb1a6ecd5d381d314fd3bc6d62520af556b6194c?placeholderIfAbsent=true&apiKey=dd100465f17e4316864c3934d9d874f8&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/5bc7f035ca7b527c2ccc5d3deb1a6ecd5d381d314fd3bc6d62520af556b6194c?placeholderIfAbsent=true&apiKey=dd100465f17e4316864c3934d9d874f8&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/5bc7f035ca7b527c2ccc5d3deb1a6ecd5d381d314fd3bc6d62520af556b6194c?placeholderIfAbsent=true&apiKey=dd100465f17e4316864c3934d9d874f8&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/5bc7f035ca7b527c2ccc5d3deb1a6ecd5d381d314fd3bc6d62520af556b6194c?placeholderIfAbsent=true&apiKey=dd100465f17e4316864c3934d9d874f8&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/5bc7f035ca7b527c2ccc5d3deb1a6ecd5d381d314fd3bc6d62520af556b6194c?placeholderIfAbsent=true&apiKey=dd100465f17e4316864c3934d9d874f8"
+          class="img"
+        />
+        <div class="body">
+          <div class="text">Text</div>
+          <div class="div">$0</div>
+          <div class="div-2">Body text.</div>
+        </div>
+      </div>
+      <style>
+        .product-info-card {
+          border-radius: 8px;
+          background-color: rgba(255, 255, 255, 1);
+          display: flex;
+          min-width: 240px;
+          min-height: 502px;
+          flex-direction: column;
+          color: var(--sds-color-text-default-default);
+          justify-content: start;
+          width: 100%;
+          padding: 16px 16px 143px;
+          font: var(--sds-typography-body-font-weight-regular)
+            var(--sds-typography-body-size-medium) / 1.4
+            var(--sds-typography-body-font-family);
+          border: 1px solid rgba(217, 217, 217, 1);
+        }
+        @media (max-width: 991px) {
+          .product-info-card {
+            max-width: 100%;
+            margin-top: 40px;
+            padding-bottom: 100px;
+          }
+        }
+        .img {
+          aspect-ratio: 1.9;
+          object-fit: contain;
+          object-position: center;
+          width: 100%;
+          min-height: 247px;
+        }
+        @media (max-width: 991px) {
+          .img {
+            max-width: 100%;
+          }
+        }
+        .body {
+          display: flex;
+          margin-top: 16px;
+          width: 208px;
+          max-width: 100%;
+          flex-direction: column;
+          justify-content: start;
+        }
+        .text {
+          flex: 1;
+          width: 100%;
+          white-space: nowrap;
+        }
+        @media (max-width: 991px) {
+          .text {
+            white-space: initial;
+          }
+        }
+        .div {
+          align-self: start;
+          margin-top: 8px;
+          font-weight: var(--sds-typography-body-font-weight-strong);
+          white-space: nowrap;
+        }
+        @media (max-width: 991px) {
+          .div {
+            white-space: initial;
+          }
+        }
+        .div-2 {
+          margin-top: 8px;
+          width: 100%;
+          font-size: var(--sds-typography-body-size-small);
+          color: var(--sds-color-text-default-secondary);
+        }
+      </style>
+    
+</body>
+</html>

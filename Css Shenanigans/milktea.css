@@ -1,0 +1,261 @@
+*{
+    margin: 0;  
+    padding: 0;
+}
+body{
+    background-color: beige;
+}
+/*container*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    min-height: 56rem;
+    flex-direction: column;
+}
+.center{
+    padding: 10px;
+    width: 90%;
+    height: 98%;
+    display: grid;
+    gap:50px;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 5rem;
+}
+.center > div{
+    height:25rem;
+    width: 32rem;
+}
+image img{
+    display: ;
+    height: 10rem;
+}
+/*banner*/
+.banner{
+    padding:10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*grid*/
+.colon{
+    width: 100%;
+    height: 20rem;
+    background-color: #3b9cc9;
+    padding: 10px;
+}
+/*Logo*/
+.logo{
+    width:125px;
+    height: 125px;
+    position: relative;
+    margin-right: 2rem;
+    align-items: center;
+    
+    
+}
+/*MENU*/
+
+.bar{
+    background-color: #B22222;
+    min-height: 7.7rem;
+    height: auto;  
+    font-size: 25px;
+    font-family: "Quicksand", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #ffd5c7;
+  
+}
+.taskbar > div > ul li{
+    list-style: none;
+    margin-right: 2rem;
+    justify-content: space-between;
+    display: flex;
+}
+.left-menu{
+    display: flex;
+    align-items: center;
+}
+.taskbar > div > ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap:50px;
+}
+.middles{
+    display: flex;
+}
+.shop:hover .bar {
+    cursor: pointer;
+    background-color: red;
+    padding-top: 2rem;
+    height: 20rem;
+}
+
+/*MILK TEA ABOUT*/
+.milktea-about{
+    width: 50%;
+    padding-left: 20px;
+}
+.milktea-banner{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*MILKSHAKE ABOUT*/
+.milkshake-about{
+    background-color: red;
+    width: 50%;
+}
+/*MENU INSIDE*/
+.inside-menu{
+    width: 100%;
+}
+.container-menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.right-choice {
+    display: flex;
+    gap: 20px;
+    animation: appearlogo 0.5s forwards;
+}
+.right-choice >div{
+    height: 14rem;
+    width: 14rem;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+.left-choice{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+    animation: appearlogo 0.5s forwards;
+    background-color: blanchedalmond;
+    border-color: #3b9cc9;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 10px;
+}
+.left-choice >div ul li{
+    list-style: none;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    gap: 50px;
+}
+.left-choise >div button{
+    background-color: red;
+}
+.left >div{
+    background-color: #032433;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 0px 2px #595238;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    gap: 50px;
+}
+.right >div{
+    background-color: #032433;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 0px 2px #595238;
+}
+/*UP*/
+.up{
+    background-color: rgb(88, 87, 87);
+    border-radius: 50%;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    bottom: 20px;
+    right: 20px;
+}
+.up:hover{
+    background-color: rgb(110, 110, 110);
+}
+/*animation*/
+@keyframes appeardown {
+    from { height: 2.5rem; }
+    to { height: 25rem; }
+}
+@keyframes appearup{
+    from { height: 25rem; }
+    to { height: 2.5rem; }
+}
+@keyframes appearlogo{
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes smalltobig{
+    from{
+        opacity: 0;
+        scale: 0.1;
+    }
+    to{
+        opacity: 1;
+        scale:1;
+    }
+}
+@keyframes righttoleft{
+    from {
+        width: 20%;
+    }
+    to {
+        width: 68%;
+    }
+}
+/*===============================*/
+a:visited{
+    color: #FFD5C7;
+}
+a{
+    text-decoration: transparent;
+}
+/*FOOTERS*/
+.foot-container{
+    background-color: rgb(245, 79, 79);
+    display: flex;
+    padding: 20px;
+}
+.banner span{
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.banner{
+    margin-bottom: 20px;
+}
+.foot-container >div{
+    height: 15rem;
+    width: 20rem;
+}
+.social img{
+    height: 40px;
+    width: 40px;
+    
+}
+.stores ul li{
+    list-style: none;
+    margin-bottom:15px;
+    font-family:'Courier New', Courier, monospace;
+}
+.stores{
+    
+}

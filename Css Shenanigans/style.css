@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar{
+    display: none;
+  }
+/* HomePage*/
+  #HomePage{
+    background-color: #ffd5c7;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+/*Logo*/
+.logo{
+    width:125px;
+    height: 125px;
+    position: relative;
+    margin-right: 2rem;
+    align-items: center;
+    
+    
+}
+/*MENU*/
+.taskbar{
+    position: absolute;
+    width: 100%;
+}
+.bar{
+    background-color: #b2222200;
+    min-height: 7.7rem;
+    height: auto;  
+    font-size: 25px;
+    font-family: "Quicksand", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #ffd5c7;
+    
+}
+.taskbar > div > ul li{
+    list-style: none;
+    margin-right: 2rem;
+    justify-content: space-between;
+    display: flex;
+    
+}
+.left-menu{
+    display: flex;
+    align-items: center;
+}
+.taskbar > div > ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap:50px;
+}
+.middles{
+    display: flex;
+}
+.shop:hover .bar {
+    cursor: pointer;
+    background-color: red;
+    padding-top: 2rem;
+    height: 20rem;
+}
+/*BANNER*/
+.banners    {
+    width: 100%;
+    height: 57rem;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/001/349/622/small_2x/bubble-tea-in-milk-splash-advertisement-banner-free-vector.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*SEARCH*/
+.search-bar{
+    background-color: rgba(245, 245, 245, 0);
+}
+.search-bar input{
+    width: 40rem;
+    border-style: none;
+    background-color: #03243300;
+    border-bottom-style: solid;
+    font-size: 20px;
+}
+/*MILK TEA ABOUT*/
+.milktea-about{
+    width: 50%;
+    padding-left: 20px;
+}
+.milktea-banner{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*MILKSHAKE ABOUT*/
+.milkshake-about{
+    background-color: red;
+    width: 50%;
+}
+/*MENU INSIDE*/
+.inside-menu{
+    width: 100%;
+}
+.container-menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.right-choice {
+    display: flex;
+    gap: 20px;
+    animation: appearlogo 0.5s forwards;
+}
+.right-choice >div{
+    height: 14rem;
+    width: 14rem;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+.left-choice{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+    animation: appearlogo 0.5s forwards;
+    background-color: blanchedalmond;
+    border-color: #3b9cc9;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 10px;
+}
+.left-choice >div ul li{
+    list-style: none;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    gap: 50px;
+}
+.left-choise >div button{
+    background-color: red;
+}
+.left >div{
+    background-color: #032433;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 0px 2px #595238;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    gap: 50px;
+}
+.right >div{
+    background-color: #032433;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 0px 2px #595238;
+}
+/*UP*/
+.up{
+    background-color: rgb(88, 87, 87);
+    border-radius: 50%;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    bottom: 20px;
+    right: 20px;
+}
+.up:hover{
+    background-color: rgb(110, 110, 110);
+}
+@keyframes appeardown {
+    from { height: 2.5rem; }
+    to { height: 25rem; }
+}
+@keyframes appearup{
+    from { height: 25rem; }
+    to { height: 2.5rem; }
+}
+@keyframes appearlogo{
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes smalltobig{
+    from{
+        opacity: 0;
+        scale: 0.1;
+    }
+    to{
+        opacity: 1;
+        scale:1;
+    }
+}
+@keyframes righttoleft{
+    from {
+        width: 20%;
+    }
+    to {
+        width: 68%;
+    }
+}
+/*===============================*/
+
+
+
+/*===============================*/
+
+
+.class{
+    color: forestgreen;
+    display: flex;
+    
+}
+
+
+
+/*===============================*/
+.div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+    padding-top: 10rem;
+}
+
+/*Card 1*/
+.theme {
+    display: flex;
+    align-items: center;
+    width: 68%;
+    height: 20rem;
+    background-color: #3b9cc9;
+    margin-left: 10rem;
+    transform-origin: right;
+    animation: righttoleft 0.5s forwards;
+}
+
+.card{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 70%;
+    position: absolute ;
+}
+.card img{
+    transform: translateX(-100px);
+    height: 30rem;
+    width: 30rem;
+    animation: smalltobig 0.5s forwards;
+}
+
+.wakamo{
+    height: 250px;
+    width: 275px;
+    position: absolute;
+}
+.theme2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 20rem;
+    background-color: #3b9cc9;
+    margin-left: 10rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.milktea-about2 {
+    flex: 1;
+    padding-left: 2rem;
+}
+
+.card2 {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.car2 img {
+    height: 250px;
+    width: 275px;
+}
+
+/*MIDDLE*/
+.shake-1 {
+    display: flex;
+    justify-content: space-between;
+    height: 20rem;
+    width: 68%;
+    background-color: #3b9cc9;
+    transform-origin: right;
+    animation: righttoleft 0.5s forwards;
+}
+.shake-about{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.shake-img img{
+    width: 30rem;
+    height: 30rem;
+    position: absolute;
+    margin-left: 4rem;
+    transform: translateY(-75px);
+    animation: smalltobig 0.5s forwards;
+}
+.middle{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10rem;
+    
+}
+/*card2*/
+
+.yunaispink{
+    width: 275px;
+    height: 245px;
+}
+
+/*FOOTERS*/
+.foot-container{
+    background-color: rgb(245, 79, 79);
+    display: flex;
+    padding: 20px;
+}
+.banner span{
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.banner{
+    margin-bottom: 20px;
+}
+.foot-container >div{
+    height: 15rem;
+    width: 20rem;
+}
+.social img{
+    height: 40px;
+    width: 40px;
+    
+}
+.stores ul li{
+    list-style: none;
+    margin-bottom:15px;
+    font-family:'Courier New', Courier, monospace;
+}
+.stores{
+    
+}
+
+/*Under line from html*/
+a:visited{
+    color: #FFD5C7;
+}
+a{
+    text-decoration: transparent;
+}
