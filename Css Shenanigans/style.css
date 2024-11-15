@@ -22,8 +22,12 @@
     position: relative;
     margin-right: 2rem;
     align-items: center;
-    
-    
+    display: flex;
+}
+.logo h1{
+    font-size: 25px;
+    font-weight: 500;
+    color:black;
 }
 /*MENU*/
 .taskbar{
@@ -38,9 +42,16 @@
     font-family: "Quicksand", cursive;
     font-optical-sizing: auto;
     font-style: normal;
-    color: #ffd5c7;
+
     
 }
+#taskbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+  }
 .taskbar > div > ul li{
     list-style: none;
     margin-right: 2rem;
@@ -68,18 +79,44 @@
     padding-top: 2rem;
     height: 20rem;
 }
+/*MENe*/
+#menuzz {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+    background-color: white; /* Optional: make sure menu is visible */
+  }
+  
+  .hidden {
+    transform: translateY(-100%); /* Moves the menu off the top of the viewport */
+  }
+
 /*BANNER*/
 .banners    {
     width: 100%;
     height: 57rem;
-    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/001/349/622/small_2x/bubble-tea-in-milk-splash-advertisement-banner-free-vector.jpg");
+    background-image: linear-gradient(rgba(44, 44, 44, 0.5), rgba(0, 0, 0, 0.5)),url("https://static.vecteezy.com/system/resources/thumbnails/001/349/622/small_2x/bubble-tea-in-milk-splash-advertisement-banner-free-vector.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
+}
+.banner-text{
+    text-align: center;
+}
+.banner-text h1{
+    font-family: "Noto Sans", serif;
+    color: whitesmoke;
+}
+.banner-text span{
+    font-family: "Noto Sans", serif;
+    font-weight: 350;
+    color: white;
+}
 /*SEARCH*/
 .search-bar{
     background-color: rgba(245, 245, 245, 0);
@@ -242,7 +279,7 @@
 .container{
     display: flex;
     flex-direction: column;
-    gap: 20rem;
+    gap: 15rem;
     padding-top: 10rem;
 }
 
@@ -305,6 +342,100 @@
     width: 275px;
 }
 
+/*SECTOR*/
+.sector-1{
+    background-color: rgb(250, 145, 145);
+    height: 35rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.sector-2{
+    background-color: rgb(250, 145, 145);
+    height: 35rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.sector-3{
+    background-color: rgb(250, 145, 145);
+    height: 35rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.sector-4{
+    background-color: rgb(250, 145, 145);
+    height: 35rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.sector-5{
+    background-color: rgb(250, 145, 145);
+    height: 35rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+/*comment*/
+.comment-sector{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20rem 0px 20rem;
+    height: 100%;
+    width: 100%;
+}
+.comment-left{
+    height: 90%;
+    width: 65%;
+    background-color: red;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+}
+.comment-text{
+    padding: 40px 20px 20px 20px;
+}
+.comment-next{
+    display: flex;
+    gap: 5px;
+    padding-left: 10px;
+}
+.next-left{
+    background-color: whitesmoke;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.next-right{
+    background-color: whitesmoke;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.where{
+    background-color: rebeccapurple;
+    height: 25%;
+    padding-left: 20px;
+    border-bottom-left-radius: 20px;
+}
+.comment-right{
+    height: 90%;
+    width: 50%;
+    background-color: rgb(240, 238, 238);
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
 /*MIDDLE*/
 .shake-1 {
     display: flex;

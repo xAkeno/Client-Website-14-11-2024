@@ -1,26 +1,38 @@
 main();
-var check = false; 
+var check = false;
 
 function extendMenu() {
-    var menu = document.getElementsByClassName('bar')[0]; 
-    var shop = document.querySelector(".shop");
-    var insideMenu = document.getElementsByClassName('inside-menu')[0];
-    var pic = document.getElementsByClassName('left-choice')[0];
+  var menu = document.getElementsByClassName("bar")[0];
+  var shop = document.querySelector(".shop");
+  var insideMenu = document.getElementsByClassName("inside-menu")[0];
+  var pic = document.getElementsByClassName("left-choice")[0];
 
-    shop.addEventListener('click', () => {
-        if (!check) {
-            menu.style.height = "25rem";
-            insideMenu.style.display = "block";
-            menu.style.animation = "appeardown 0.8s backwards"
-            check = true;
-        } else {
-            menu.style.height = "2.5rem";
-            insideMenu.style.display = "none";
-            menu.style.animation = "appearup 0.7s backwards"
-            check = false;
-        }
-    });
+  shop.addEventListener("click", () => {
+    if (!check) {
+      menu.style.height = "25rem";
+      insideMenu.style.display = "block";
+      menu.style.animation = "appeardown 0.8s backwards";
+      check = true;
+    } else {
+      menu.style.height = "2.5rem";
+      insideMenu.style.display = "none";
+      menu.style.animation = "appearup 0.7s backwards";
+      check = false;
+    }
+  });
 }
 function main() {
-    extendMenu();
+  extendMenu();
 }
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("taskbar").style.top = "0";
+  } else {
+    document.getElementById("taskbar").style.top = "-110px";
+    document.getElementById("inside-menu").style.display = "none";
+    check = false;
+  }
+  prevScrollpos = currentScrollPos;
+};
