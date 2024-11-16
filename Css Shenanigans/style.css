@@ -38,6 +38,7 @@
 .taskbar{
     position: absolute;
     width: 100%;
+    display: block;
 }
 .bar{
     background-color: #b2222200;
@@ -105,19 +106,37 @@
 .banners    {
     width: 100%;
     height: 57rem;
-    background-image: url(/Images-for-stuff/backimage.jpg);
+    background-image: url(/Images-for-stuff/backimageshark.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     align-items: center;
-
-
+    
+}
+.banners-down{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    border-color: #d0042c;
+    border-style: solid;
+}
+.banners-down img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
 }
 .banner-text{
-    width: 45rem;
     padding-right: 5rem;
-    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 93%;
+}
+.ban-center{
+    width: 37%;
 }
 .banner-text-h1{
     border-bottom-style: solid;
@@ -125,6 +144,7 @@
     margin-bottom: 10px;
     width: 42rem;
     padding-bottom: 10px;
+    
 }
 .banner-text-h1 h1{
     font-family: "Bebas Neue", sans-serif;
@@ -239,16 +259,17 @@
 }
 /*UP*/
 .up{
-    background-color: rgb(88, 87, 87);
+    background-color: whitesmoke;
     border-radius: 50%;
     position: fixed;
     height: 50px;
     width: 50px;
     bottom: 20px;
     right: 20px;
+    padding: 5px;
 }
 .up:hover{
-    background-color: rgb(110, 110, 110);
+    background-color: rgb(201, 199, 199);
 }
 @keyframes appeardown {
     from { height: 2.5rem; }
@@ -582,7 +603,7 @@
 }
 .maybe img{
     height: 40rem;
-    transform: rotate(-15deg) translate(50px, 0px);
+    transform: rotate(-15deg) translate(50px, 10px);
 }
 .maybe2{
     position: absolute;
@@ -739,7 +760,7 @@
     align-items: center;
 }
 .where{
-    background-color: #8a041f;
+    background-color: #f5a4a4;
     height: 25%;
     padding-left: 20px;
     border-bottom-left-radius: 20px;
