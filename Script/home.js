@@ -24,6 +24,7 @@ function extendMenu() {
 function main() {
   extendMenu();
 }
+
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
@@ -36,6 +37,7 @@ window.onscroll = function () {
   } else {
     document.getElementById("taskbar").style.top = "-1400px";
     document.getElementById("inside-menu").style.display = "none";
+    document.getElementById("banners-down").style.display = "none";
     // check = false;
   }
   prevScrollpos = currentScrollPos;
@@ -198,3 +200,70 @@ const milkMore = {
     this.updateSlide();
   },
 };
+
+/* */
+const toppick = {
+  currentSlide: 0,
+  slides: [
+    {
+      title: "Classic Wintermelon Bliss 🌟",
+      text: "A timeless favorite! Smooth, caramelized wintermelon flavor blends perfectly with creamy milk and chewy tapioca pearls. Perfect for those who enjoy a subtly sweet and refreshing milk tea experience.",
+      image:
+        "https://doxo.com.ph/wp-content/uploads/2024/01/WINTERMELON-MILK-TEA-web.png", // Replace with actual image path
+    },
+    {
+      title: "Taro Dream Cream 💜",
+      text: "Earthy, nutty, and beautifully purple! This taro milk tea is a dreamy treat for those who love a flavor that’s as unique as it is delicious. Fans adore its velvety texture and subtle sweetness.",
+      image:
+        "https://doxo.com.ph/wp-content/uploads/2024/01/CHOCOLATE-MILK-TEA-web.png",
+    },
+    {
+      title: "Brown Sugar Boba Delight 🥇",
+      text: "Indulge in the rich, velvety taste of brown sugar paired with a creamy milk base. The perfect choice for boba lovers who crave that caramelized sweetness in every sip.",
+      image:
+        "https://doxo.com.ph/wp-content/uploads/2019/12/Caramelized-Sugar-Milk-Tea-web.png",
+    },
+    {
+      title: "Strawberry Fields Iced Tea 🍓",
+      text: "Bright and fruity! Strawberry milk tea combines juicy berry goodness with silky milk, making it a favorite for those who prefer a fruity twist to their classic tea.",
+      image:
+        "https://doxo.com.ph/wp-content/uploads/2024/01/RED-VELVET-MILK-TEA-web.png",
+    },
+  ],
+
+  init: function () {
+    this.updateSlide();
+  },
+
+  updateSlide: function () {
+    const image = document.getElementById("comment-result-image");
+    const title = document.getElementById("comment-result-about-banner");
+    const text = document.getElementById("text-right");
+    const slideText = this.slides[this.currentSlide];
+
+    image.innerHTML = `<img src="${slideText.image}" alt="Slide Image" />`;
+    title.innerHTML = `<h1>${slideText.title}</h1>`;
+    text.innerHTML = `<span>${slideText.text}</span>`;
+
+    const bardiv = bar.querySelectorAll("div");
+    bardiv.forEach((div, index) => {
+      if (index === this.currentSlide) {
+        div.style.backgroundColor = "black"; // Highlight current slide
+      } else {
+        div.style.backgroundColor = "white"; // Reset others to gray
+      }
+    });
+  },
+
+  nextSlide: function () {
+    this.currentSlide = (this.currentSlide + 1) % this.slides.length;
+    this.updateSlide();
+  },
+
+  prevSlide: function () {
+    this.currentSlide =
+      (this.currentSlide - 1 + this.slides.length) % this.slides.length;
+    this.updateSlide();
+  },
+};
+// Data for the bars

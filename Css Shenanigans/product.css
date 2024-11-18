@@ -1,0 +1,289 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Logo*/
+.logo{
+    width:80px;
+    height: 80px;
+    margin: 0px 2rem 0px 2rem;
+    align-items: center;
+    display: flex;
+    
+}
+.logo img{
+    width:80px;
+    height: 80px;
+}
+.logo h1{
+    font-size: 25px;
+    font-weight: 500;
+    color:black;
+}
+/*MENU*/
+.taskbar{
+    width: 100%;
+    display: block;
+    background-color: #d0042c;
+}
+.bar{
+    background-color: #ff000000;
+    min-height: 5rem;
+    height: auto;  
+    font-size: 25px;
+    font-family: "Quicksand", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+#taskbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+  }
+.taskbar > div > ul li{
+    list-style: none;
+    margin-right: 2rem;
+    justify-content: space-between;
+    display: flex;
+    
+}
+.left-menu{
+    display: flex;
+    align-items: center;
+}
+.left-menu li a{
+    color: white;
+}
+.taskbar > div > ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap:50px;
+}
+.middles{
+    display: flex;
+}
+.shop:hover .bar {
+    cursor: pointer;
+    background-color: red;
+    padding-top: 2rem;
+    height: 20rem;
+}
+/*MENe*/
+#menuzz {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+    background-color: white; /* Optional: make sure menu is visible */
+}
+
+.hidden {
+    transform: translateY(-100%); /* Moves the menu off the top of the viewport */
+}
+/*center*/
+button{
+    cursor: pointer;
+}
+.container{
+    
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(241, 241, 241);
+    height: auto;
+    width: 70%;
+    padding: 6rem 20px 20px 20px;
+    padding: 20;
+    display: flex;
+}
+.left{
+    background-color: rgba(155, 155, 155, 0.26);
+    border-radius: 10px;
+    width: 60%;
+    height: auto;
+    padding: 20px;
+}
+.left img{
+    height: 35rem;
+    width: 75%;
+    border-radius: 5px;
+}
+.left-top{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.right{
+    width: 40%;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    padding: 10px;
+}
+.right strong{
+    font-size: 20px;
+}
+.right button{
+    border-radius: 20px;
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.creator{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgb(219, 219, 219);
+    border-radius: 5px;
+    padding: 10px;
+}
+.creator img{
+    height: 4rem;
+    width: 4rem;
+}
+.creator button{
+    width: 10rem;
+}
+
+/*comment*/
+.comment >div{
+    background-color: rgb(182, 175, 175);
+    border-radius: 15px;
+    width: 80%;
+    height: 6rem;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.info-section{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    overflow: clip;
+}
+.comment-sec{
+    margin-left: 4.2rem;
+    
+}
+.submit-comment{
+    display: flex;
+    align-items: center;
+}
+.submit-comment input{
+    width: 95%;
+    height: 2.5rem;
+    background-color: rgb(182, 175, 175);
+    border-style: none;
+    border-bottom-style: solid;
+    outline: none;
+    padding-left: 5px;
+}
+.submit-comment button{
+    height: 2.5rem;
+    width: auto;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-width: 1px;
+    border-radius: 15px;
+    padding: 5px;
+}
+/*CONTAINER*/
+/* .container{
+    background-color: #e4e5e5;
+    display: flex;
+    gap: 10rem;
+    flex-direction: column;
+
+    min-height: 55rem;
+    height: 70rem;
+}
+.top{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom{
+    width: 100%;
+    height: 35%;
+}
+.top-container{
+    height: 100%;
+    width: 100%;
+    padding: 13rem 100px 20px 100px;
+    background-color: bisque;
+    display: flex;
+}
+.top-left{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 100%;
+} */
+/*IMAGE*/
+/* .main-image{
+    background-color: rgb(236, 235, 235);
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    height: 85%;
+}
+.sub-image{
+    height: 0%;
+    background-color: aqua;
+} */
+/*RIGHT*/
+/* .top-right{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+.title h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+.price h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+.count{
+    font-family: 50px;
+}
+.count button{
+    padding: 10px;
+    border-width: 1px;
+    background-color: #d0042c;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50%;
+}
+.count input{
+    width: 2rem;
+    height: 1.5rem;
+    font-size: 15px;
+} */

@@ -3,7 +3,25 @@
     padding: 0;
 }
 body{
-    background-color: beige;
+    background-color: #d7dada;
+}
+::-webkit-scrollbar{
+    display: none;
+  }
+  
+/*up*/
+.up{
+    background-color: whitesmoke;
+    border-radius: 50%;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px;
+}
+.up:hover{
+    background-color: rgb(201, 199, 199);
 }
 /*container*/
 .container{
@@ -12,69 +30,139 @@ body{
     align-items: center;
     height: auto;
     min-height: 56rem;
+    padding: 0px 20px 0px 20px;
     flex-direction: column;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
 }
-.center{
-    padding: 10px;
-    width: 90%;
-    height: 98%;
+.center{ 
+    width: 100%;
+    height: 100%;
     display: grid;
-    gap:50px;
+    gap: 10px 10px;
     grid-template-columns: auto auto auto;
-    margin-bottom: 5rem;
 }
 .center > div{
-    height:25rem;
-    width: 32rem;
+    height:40rem;
+    width: 100%;
 }
 image img{
-    display: ;
     height: 10rem;
 }
 /*banner*/
-.banner{
-    padding:10px;
+.banner-ban{
     font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    height: 35rem;
+    margin-bottom: 5rem;
+}
+.banner-ban img{
+    width: 100%;
+    height: 35rem;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.banner-ban h1{
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+    font-family: "Bebas Neue", serif;
+    font-style: italic;
+    font-size: 60px;
 }
 /*grid*/
 .colon{
     width: 100%;
     height: 20rem;
-    background-color: #3b9cc9;
-    padding: 10px;
+    background-color: #ede8e1;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+    margin-bottom: 25;
 }
+/*image*/
+.colon:hover .image >img{
+    scale: 1.05; 
+    transition: 0.2s scale ease-in-out;
+    cursor: pointer;
+}
+.image{
+    width: 100%;
+    height: 100%;
+}
+.image img{
+    height: 35em;
+    width: 35rem;   
+}
+
+/*font*/
+.text{
+    color:#d0042c;
+    font-family: "Bebas Neue", serif;
+    font-weight: 500;
+}
+.price{
+    color: #d0042c;
+    font-family: "Noto Sans Elbasan", serif;
+}
+
+/*MENU*/
 /*Logo*/
 .logo{
-    width:125px;
-    height: 125px;
-    position: relative;
-    margin-right: 2rem;
+    width:80px;
+    height: 80px;
+    margin: 0px 2rem 0px 2rem;
     align-items: center;
-    
+    display: flex;
     
 }
+.logo img{
+    width:80px;
+    height: 80px;
+}
+.logo h1{
+    font-size: 25px;
+    font-weight: 500;
+    color:black;
+}
 /*MENU*/
-
+.taskbar{
+    position: absolute;
+    width: 100%;
+    display: block;
+    background-color: #d0042c;
+}
 .bar{
-    background-color: #B22222;
-    min-height: 7.7rem;
+    background-color: #b2222200;
+    min-height: 5rem;
     height: auto;  
     font-size: 25px;
     font-family: "Quicksand", cursive;
     font-optical-sizing: auto;
     font-style: normal;
-    color: #ffd5c7;
-  
 }
+#taskbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+  }
 .taskbar > div > ul li{
     list-style: none;
     margin-right: 2rem;
     justify-content: space-between;
     display: flex;
+    
 }
 .left-menu{
     display: flex;
     align-items: center;
+}
+.left-menu li a{
+    color: white;
 }
 .taskbar > div > ul{
     display: flex;
@@ -92,7 +180,21 @@ image img{
     padding-top: 2rem;
     height: 20rem;
 }
+/*MENe*/
+#menuzz {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+    background-color: white; /* Optional: make sure menu is visible */
+  }
+  
+  .hidden {
+    transform: translateY(-100%); /* Moves the menu off the top of the viewport */
+  }
 
+/**?
 /*MILK TEA ABOUT*/
 .milktea-about{
     width: 50%;
@@ -102,6 +204,7 @@ image img{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /*MILKSHAKE ABOUT*/
 .milkshake-about{
     background-color: red;
@@ -109,7 +212,7 @@ image img{
 }
 /*MENU INSIDE*/
 .inside-menu{
-    width: 100%;
+    display: flex;
 }
 .container-menu{
     display: flex;
@@ -258,4 +361,11 @@ a{
 }
 .stores{
     
+}
+
+/*===========*/
+
+.colon{
+
+    display: flex;
 }
